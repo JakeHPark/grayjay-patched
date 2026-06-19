@@ -89,7 +89,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git clone --depth 1 --branch "$UPSTREAM_BRANCH" "$UPSTREAM_REPO" grayjay
+          git clone --branch "$UPSTREAM_BRANCH" "$UPSTREAM_REPO" grayjay
           cd grayjay
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
